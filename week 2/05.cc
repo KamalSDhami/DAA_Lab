@@ -1,5 +1,7 @@
 // . Given a sorted array of positive integers, design an algorithm and implement it using a program to find three indices i, j, k such that arr[i] + arr[j] = arr[k].
 
+// [2,3,4,5,6,7,9,10]
+
 #include<iostream>
 #include<vector>
 
@@ -10,7 +12,7 @@ bool find_triplet(vector<int> arr){
         int low = 0, high = i - 1;
         while(low < high){
             if(arr[low] + arr[high] == arr[i]){
-                cout << low + 1 << ", " << high + 1 << ", " << i + 1 << endl;
+                cout << low  << ", " << high  << ", " << i  << endl;
                 return true;
             } else if(arr[low] + arr[high] < arr[i]){
                 low++;

@@ -19,12 +19,12 @@ int main() {
 int T; 
 cin >> T; 
 while (T--) { 
-int n, key; 
-cin >> n; 
-vector<int> vec(n); 
-for (int i = 0; i < n; i++) cin >> vec[i]; 
-cin >> key; 
-cout << countPairsWithDifference(vec, key) << endl; 
+    int n, key; 
+    cin >> n; 
+    vector<int> vec(n); 
+    for (int i = 0; i < n; i++) cin >> vec[i]; 
+    cin >> key; 
+    cout << countPairsWithDifference(vec, key) << endl; 
 } 
 return 0; 
 }

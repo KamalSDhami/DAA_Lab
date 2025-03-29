@@ -2,13 +2,14 @@
 
 #include<iostream>
 #include<vector>
+#include<cmath>
 
 using namespace std;
 
 void search(vector<int> arr, int key){
     int comparisions = 0;
     int n = arr.size();
-    int jump = 2;
+    int jump = sqrt(n);
     int low = 0, high = jump;
     while(high < n){
         comparisions++;

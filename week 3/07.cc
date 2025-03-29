@@ -3,6 +3,7 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+// [1,2,3,4,5,6]
 
 void insertion_sort(vector<int> &arr){
     int comparisons = 0, shifts = 0;
